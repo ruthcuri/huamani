@@ -1,0 +1,59 @@
+.site-menu .contenedor-menu{
+    height: 89px;
+    background: #3b2e29;
+    text-align: center;
+}
+
+.site-menu .contenedor-menu .nav-desktop {
+    display: inline-block;
+    text-align: center;
+}
+
+.site-menu .contenedor-menu .nav-desktop a {
+    text-decoration: none;
+    float: left;
+  }
+
+.site-menu .contenedor-menu .nav-desktop a div {
+    font-size: 15px;
+    color: #3b2e29;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 5.57143rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    background-color: #f8f4e5;
+    text-transform: uppercase;
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: center top;
+    -moz-transform-origin: center top;
+    -ms-transform-origin: center top;
+    -o-transform-origin: center top;
+    transform-origin: center top;
+    z-index: 1;
+    padding: 0 33px;
+}
+
+.site-menu .contenedor-menu .nav-desktop a div:first-child {
+    transform: rotateX(0deg);
+    transform-origin: center bottom;
+    background-color: #3b2e29;
+    color: #f8f4e5;
+}
+
+.site-menu .contenedor-menu .nav-desktop a:nth-child(n+2):hover div {
+  transform: rotateX(0deg);
+  top: -89px;
+}
+
+.site-menu .contenedor-menu .nav-desktop a:nth-child(n+2):hover div:first-child {
+  transform: rotateX(-90deg);
+}
+.site-menu .contenedor-menu .nav-desktop a.active div {
+  transform: rotateX(0deg);
+}
+.site-menu .contenedor-menu .nav-desktop a.active div:first-child {
+   transform: rotateX(90deg);
+}
